@@ -7,10 +7,7 @@ async function sendEmail(request, reply){
         lastName
     } = request.body
 
-    const template = `
-        Olá ${firstName} ${lastName}, sua assinatura foi confirmada!
-        Para acessar seus recursos exclusivos você precisa basta clicar aqui.
-    `
+    const template = `Olá ${firstName} ${lastName}, sua assinatura foi confirmada! Para acessar seus recursos exclusivos você precisa basta clicar aqui.`
 
     try {
         await MailQueue.add({
