@@ -10,7 +10,9 @@ describe("Email Controller", ()=> {
         firstName: "John",
         secondName: "Wick"
       }
-
     } 
+    const reply = {
+      code: jestConfig.fn()
+    }
   })
 })
