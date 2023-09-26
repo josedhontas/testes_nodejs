@@ -12,7 +12,8 @@ describe("Email Controller", ()=> {
       }
     } 
     const reply = {
-      code: jestConfig.fn()
+      code: jestConfig.fn().mockReturnThis(),
+      send: jestConfig.fn(), 
     }
   })
 })
