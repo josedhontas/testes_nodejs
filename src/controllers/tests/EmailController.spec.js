@@ -33,6 +33,5 @@ describe("Email Controller", ()=> {
       text: template
     });
     expect(reply.code).toHaveBeenCalledWith(200)
-    
   })
 })
